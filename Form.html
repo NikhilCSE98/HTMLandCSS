@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myform{
+            width:520px;
+            height: 445px;
+            margin:150px auto;
+            border-radius: 24px;
+            background-image:-webkit-linear-gradient(top,#494444,#2c2626) ;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .myform >div.cacc{
+            height: 77px;
+            line-height: 77px;
+            text-align: center;
+            margin-bottom: 41px;
+            font-size: 2em;
+            color: #f3dede;
+            border-bottom: 1px solid black;
+            text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.5);
+        }      
+        .myform > div > input{
+            display: block;
+            width: 92%;
+            height: 38px;
+             padding-left: 43px;
+            border-radius: 20px;
+            margin: 10px auto;
+            border: none;
+            background-image: -webkit-linear-gradient(top,#dfcccc,#a19c9c);
+            box-shadow: 0px 2px 2px 2px #3b3838;
+            font-size: 20px;        }
+        .tnc{
+            font-size: 1em !important;
+            text-align: left !important;
+            color:#fff;
+        }
+        .box{
+           padding:0px 20px;
+        }
+        .box > input:focus{
+           outline: none;
+        }
+        .tnc a{
+             color: #59f3eb;
+        }
+        input[type="submit"]
+        {
+            width: 250px;
+            height: 38px;
+            float: right;
+            border-radius: 20px;
+            border: none;
+            background-image: -webkit-linear-gradient(top,#909419,#717c00);
+            color: #fff;
+            font-size: 1.5em;
+            margin-right: 20px;
+            text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px -1px 0px 0px #b4bd2c;
+        }
+        .box input:first-child{
+            background-size: 30px;
+            background-repeat: no-repeat,repeat;
+            background-position: 5px center;
+            background-image: url("user.png"),-webkit-linear-gradient(top,#dfcccc,#a19c9c);
+        }
+        .box input:nth-child(2)
+        {
+            background-size: 25px;
+            background-repeat: no-repeat,repeat;
+            background-position: 10px center;
+            background-image: url("https://imgs.search.brave.com/ZOzNNoGylBUWMVHCslU1oFP3ah9lf6noolz8a5mWlOY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mcmVl/cG5naW1nLmNvbS90/aHVtYi90ZWxlcGhv/bmUvNzUzNTktbW9i/aWxlLXBob25lcy1i/dXR0b24tdGVsZXBo/b25lLWNhbGwtbG9n/by1ub3ctdGh1bWIu/cG5n"),-webkit-linear-gradient(top,#dfcccc,#a19c9c);
+        }
+        .box input:nth-child(3)
+        {
+            background-size: 30px;
+            background-repeat: no-repeat,repeat;
+            background-position: 10px center;
+            background-image: url("https://imgs.search.brave.com/7hwqmKklJTHDyg2iBE0xNS6L7pLibGs8wA6qQ72hhJ8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pY29u/cy52ZXJ5aWNvbi5j/b20vcG5nL28vbWlz/Y2VsbGFuZW91cy9w/cmFjdGljYWwtbGlm/ZS1pY29uL21haWwt/MjU1LnBuZw"),-webkit-linear-gradient(top,#dfcccc,#a19c9c);
+        }
+        .box input:nth-child(4)
+        {
+            background-size: 30px;
+            background-repeat: no-repeat,repeat;
+            background-position: 5px center;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/012/674/781/original/lock-icon-clipart-free-png.png"),-webkit-linear-gradient(top,#dfcccc,#a19c9c);
+        }
+    </style>
+</head>
+<body>
+    <form class="myform">
+    <div class="cacc">Create My Account</div>
+    <div class="box">
+        <input type="text" name="fname" value="" placeholder="Name">
+        <input type="number" name="phonenumber" value="" placeholder="Phone No.">
+        <input type="email" name="email" value="" placeholder="Email">
+        <input type="password" name="password" value="" placeholder="Password">
+        <p class="tnc"><input type="checkbox" name="tnc" value="agree">I agree to the <a href="#">Term and Conditions</a> and <a href="#">Privacy Policy</a></p>
+    </div>
+    <input type="submit" name="submit"  value="Create Account">
+    </form>
+</body>
+</html>

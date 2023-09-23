@@ -1,0 +1,43 @@
+.box{
+    width: 150px;
+    height:200px;
+    margin: 35vh auto;
+    background-image: url("https://imgs.search.brave.com/FCXcLWc78VAn2kv6ibEDyq5lX-dM0CFs0Byd6wjFkEs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93LmZv/cmZ1bi5jb20vZmV0/Y2gvOWQvOWRiMmQ0/NjgzZDkyZjVmMjA0/NWU5MTQyZmJkODI2/MzMuanBlZw");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.hover{
+    width:150px;
+    height: 200px;
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.box:hover .hover{
+    top: 0px;
+}
+.hover > a{
+    width: 40px;
+    height: 40px;
+     display: inline-block;
+     background: white;
+     border-radius: 50%;
+     line-height: 40px;
+     text-align: center;
+     margin:50px auto;
+     position: absolute;
+     top: 50px;
+     left: 75px;
+}
+.hover .anchor{
+    left:25px;
+}
+.hover > a:hover{
+    color: red;
+    background: silver;
+}
