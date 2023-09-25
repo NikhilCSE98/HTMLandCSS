@@ -1,0 +1,68 @@
+.common{
+    width: 350px;
+    height:200px;
+}
+.box{
+background-image: url("https://imgs.search.brave.com/kkqPCflRA-AzubYt-fc6aJPtvjUaix5S5Utb24qICF0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by91/bHRyYS1kZXRhaWxl/ZC1uZWJ1bGEtYWJz/dHJhY3Qtd2FsbHBh/cGVyLTEwXzE1NjIt/NzQ1LmpwZz9zaXpl/PTYyNiZleHQ9anBn");
+background-size: cover;
+position: relative;
+overflow: hidden;
+margin: 12px;
+float: left;
+}
+.hover{
+background:rgba(0,0,0,0.5);
+position: absolute;
+top: -200px;
+left: 0px;
+transition-property: all;
+transition-duration: 0.4s;
+transition-timing-function: ease-in-out;
+}
+.hover2{
+top: 0px;
+opacity: 0;
+transition-duration: 0.2s;
+transition-timing-function: linear;
+}
+.box:hover .hover2{
+opacity: 1;
+}
+.box:hover .hover{
+top: 0px;
+}
+.hover > a{
+width: 40px;
+position: absolute;
+height: 40px;
+display: inline-block;
+background-color: white;
+border-radius: 50%; 
+text-align: center;
+line-height: 40px;
+margin: 50px auto;
+top: 50px;
+left: 80px;
+}
+
+.hover .anchor{
+right:0px !important;
+}
+.hover .a1{
+left: 100px;
+}
+.a2{
+ left: 50px !important;
+}
+.a3{
+right: -100px !important;
+}
+.box:hover >.hover2 .a2{
+left: 120px !important;
+}
+.box:hover > .hover2 .a3{
+right: 40px !important;
+}
+.a2, .a3{
+transition: all 1s linear;
+}
