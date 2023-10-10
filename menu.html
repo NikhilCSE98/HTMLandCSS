@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background: url("menuBG.png");
+        }
+
+        .navbar {
+            background-color: #333;
+            width: 1100px;
+            height: 50px;
+            margin: 20px auto;
+        }
+
+        .navbar .menu {
+            list-style: none;
+            height: 100% !important;
+        }
+
+        .navbar .menu>li {
+            float: left;
+        }
+
+        .navbar .menu>li>a {
+            display: inline-block;
+            text-decoration: none;
+            height: 12px;
+            position: relative;
+            line-height: 12px;
+            padding: 19px;
+            color: #fff;
+        }
+
+        .navbar .menu>li>a>i {
+            display: inline-block;
+            position: absolute;
+        }
+
+        .active {
+            background-color: #f1951b;
+        }
+        .menu>li>a:hover{
+            background-color: #f1951b;
+        }
+        .submenu{
+            width:114px;
+            height: 140px;
+            background-color: #fff;
+            list-style: none;
+            position: absolute;
+            padding: 0px;
+            top:70px;
+            display: none;
+        }
+        .submenu>li{
+            position: relative;
+        }
+        .submenu>li>a{
+            height: 30px;
+            text-decoration: none;
+            padding-top: 5px;
+            text-align: center;
+            display: block;
+            
+        }
+        .menu > li:hover .submenu{
+            display: block;
+        }
+        .menu>li>.submenu>li>a:hover{
+            background-color: #f1951b;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="#">Company Logo</a></li>
+            <li><a href="#" class="active">Active</a></li>
+            <li><a href="#" class="drop">Drop Down<i class='bx bx-chevron-down'></i></i></a>
+                <ul class="submenu">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Mega Menu<i class='bx bx-chevron-down'></i></i></a></li>
+            <li><a href="#">Grid<i class='bx bx-chevron-down'></i></i></a></li>
+            <li><a href="#">Tab Bar<i class='bx bx-chevron-down'></i></i></a></li>
+            <li><a href="#">Images<i class='bx bx-chevron-down'></i></i></a></li>
+            <li><a href="#">Contacts<i class='bx bx-chevron-down'></i></i></a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
